@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.pikbest.com/back_our/20201108/bg/55265c84977fc.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #d35400;
+  font-size: 2.5em;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre secciones */
+}
+
+.add-recipe-section, .recipe-list-section {
+  background-color: #fff3e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #d35400;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input, form textarea {
+  padding: 15px;
+  border: 2px solid #e67e22;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #d35400;
+  outline: none;
+  box-shadow: 0 0 8px rgba(211, 84, 0, 0.5);
+}
+
+button {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.recipe-list {
+  margin-top: 30px;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card h3 {
+  color: #d35400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  form input, form textarea {
+    flex: 1 1 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
